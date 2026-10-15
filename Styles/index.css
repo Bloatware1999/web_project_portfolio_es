@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ArchivoBlack-Regular.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Bold.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-SemiBold.woff2) format(woff2);
+  font-display: swap;
+}
+
+/* Base: evita que el padding y los bordes aumenten el ancho de los elementos. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto 0;
+  max-width: 100%;
+  background-color: #111;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 2rem;
+  list-style: none;
+}
+
+.link {
+  transition: color 0.2s ease;
+}
+
+.link:hover,
+.nav a:hover {
+  color: lightblue;
+}
+
+/* El foco visible permite identificar enlaces al navegar con teclado. */
+.nav a:focus-visible,
+.footer a:focus-visible {
+  outline: 2px solid lightblue;
+  outline-offset: 4px;
+}
+
+.Title {
+  /* Juan Manuel Mejia Villanueva */
+  max-width: 100%;
+  margin: 0;
+  font-family: "Archivo Black" sans-serif;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.Title h2,
+main h2,
+.contact {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.photo {
+  display: block;
+  width: min(16rem, 70vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Secciones principales. El selector respeta la clase "Subtitle" del HTML. */
+main {
+  width: min(100% - 3rem, 70rem);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.Subtitle,
+main section {
+  margin-bottom: 3rem;
+}
+
+/* Pie de página y correo. El HTML actual no tiene una clase .email,
+   por eso se selecciona el enlace dentro del pie. */
+.footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background-color: #1b1b1b;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: lightblue;
+}
