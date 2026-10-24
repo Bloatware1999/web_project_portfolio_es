@@ -32,22 +32,19 @@
 
 /* Base: evita que el padding y los bordes aumenten el ancho de los elementos. */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: auto 0;
-  max-width: 100%;
-  background-color: #111;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
 .nav ul {
+  font-size: 18px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: left;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0;
@@ -71,29 +68,46 @@ body {
   outline-offset: 4px;
 }
 
+.block {
+  display: flex;
+}
+
 .Title {
   /* Juan Manuel Mejia Villanueva */
   max-width: 100%;
   margin: 0;
-  font-family: "Archivo Black" sans-serif;
-  font-size: clamp(2rem, 7vw, 4.5rem);
-  font-weight: 400;
+  font-style: normal;
   line-height: 1.1;
+  display: flex;
+  padding: 60px;
 }
 
-.Title h2,
-main h2,
+.Title__principal {
+  font-family: "Archivo Black" sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.Text {
+}
+
+.Title__description {
+  font-size: 18px;
+}
+
+.Title__subtitle {
+  font-size: 18px;
+}
+
 .contact {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
-.photo {
-  display: block;
-  width: min(16rem, 70vw);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  object-fit: cover;
+.Profile-photo {
+  width: 387px;
+  height: 500px;
+  padding:;
 }
 
 /* Secciones principales. El selector respeta la clase "Subtitle" del HTML. */
@@ -103,9 +117,68 @@ main {
   padding: 2rem 0;
 }
 
-.Subtitle,
+.habilities,
 main section {
   margin-bottom: 3rem;
+}
+
+.habilities-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+}
+
+.project__view,
+.project__view-2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logos {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.logos img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.project {
+  display: flex;
+  gap: 1rem;
+}
+
+.descripcion {
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+
+.descripcion__cafeteria {
+  width: 590px;
+}
+
+.descripcion__proyecto {
+  width: 590px;
+}
+
+.descripcion__body {
+  width: 530px;
+  height: 175px;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 /* Pie de página y correo. El HTML actual no tiene una clase .email,
@@ -129,4 +202,14 @@ main section {
 
 .footer a:hover {
   color: lightblue;
+}
+
+.mail {
+  padding: 16px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
 }

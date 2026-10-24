@@ -4,65 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web project portfolio</title>
-      <link rel="stylesheet" href="./Styles/normalize.css"/>
-    <link rel="stylesheet" href="./Styles/index.css"/>
+    <link rel="stylesheet" href="./Styles/normalize.css" />
+    <link rel="stylesheet" href="./Styles/index.css" />
   </head>
 
   <body>
     <header>
-      <nav class="nav" aria-label="Navegación principal">
-        <ul>
-          <li><a class="link" href="#">Descargar CV</a></li>
-          <li><a class="link" href="#">Enlace a GitHub</a></li>
-          <li><a class="link" href="#">Hablemos</a></li>
-          <li><a class="link" href="#">Demo en vivo</a></li>
-
-          <li>
-            <a href="#" araia-label="LinkedIn">
-              <img class="logo" src="./Images/Linkedin.svg" alt="logo-linkedin"/>
-            </a> 
-            <a href="#" aria-label="Facebook">
-               <img class="logo" src="./Images/Facebook.svg" alt="logo-facebook"/>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <img class="logo" src="./Images/Instagram.svg" alt="logo-Instagram"/>
-            </a>
-            <a href="#" aria-label="Twiter(x)">
-              <img class="logo" src="./Images/Twiter (x).svg" alt="logo-Twiter"/>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
       <!-- Presentación: el título principal de la página es un h1. -->
       <section class="Title" aria-labelledby="titulo-principal">
-        <h1 id="titulo-principal">Juan Manuel Mejia Villanueva</h1>
-        <img class="photo"
-        src="./Images/Foto de perfil.JPG"
-        alt="Foto de perfil de Juan Manuel Mejia Villanueva"
-        />
-        <h2>Descripción</h2>
+        <div class="Text">
+          <h1 class="Title__principal" id="titulo-principal">
+            Juan Manuel Mejia V
+          </h1>
+          <h2 class="Title__subtitle" id="sub-titulo">
+            Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
+          </h2>
+          <h2 class="Title__description">
+            Desarrolladora web junior con experiencia práctica creando
+            interfaces limpias y responsivas con HTML, CSS, JavaScript y React,
+            así como implementando lógica básica de back-end. Ha trabajado en
+            proyectos formativos que siguen procesos reales de desarrollo,
+            usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener
+            un código claro y resolver problemas de forma estructurada. Motivada
+            por seguir aprendiendo, asumir nuevos retos y aprovechar
+            oportunidades para crecer como desarrolladora.
+          </h2>
+          <nav class="nav" aria-label="Navegación principal">
+            <ul>
+              <li><a class="link" href="#">Descargar CV</a></li>
+              <li><a class="link" href="#">Enlace a GitHub</a></li>
+              <li><a class="link" href="#">Hablemos</a></li>
+              <!--
+            <li><a class="link" href="#">Demo en vivo</a></li>-->
+            </ul>
+          </nav>
+        </div>
+        <div class="Profile">
+          <img
+            class="Profile Profile-photo"
+            src="./Images/Foto de perfil.JPG"
+            alt="Foto de perfil de Juan Manuel Mejia Villanueva"
+          />
+        </div>
       </section>
     </header>
 
     <!-- Contenido principal: las secciones tienen encabezados ordenados. -->
     <main>
-      <section class="Subtitle" aria-labelledby="habilidades">
-      <h2 id="habilidades">Habilidades y herramientas</h2>
-      <section/>
-
-      <section>
-        <h2 id="proyectos">Proyectos destacados</h2>
-      </section>
-    </main>
-
+      <section class="habilities" aria-labelledby="habilidades">
+        <h2 class="habilidades">Habilidades y herramientas</h2>
+        <div class="habilities habilities-logos">
+          <img class="HTML5" src="./Images/HTML5.svg" alt="Logo de HTML5" />
+          <img class="CSS" src="./Images/CSS.svg" alt="Logo de CSS" />
+          <img class="Java" src="./Images/JAVASCRIPT.svg" alt="Logo de Java Script"/>
+          <img class="GIT" src="./Images/GIT.svg" alt="Logo de GIT" />
+          <img class="GITHUB" src="./Images/GITHUB.svg" alt="Logo de GITHUB" />
+          <img class="CHATGPT" src="./Images/CHATGPT.svg" alt="Logo de CHATGPT"/>
+        </div>
+          <h2 id="proyectos">Proyectos destacados</h2>
+            <section class="project" aria-labelledby="projects-title">
+                <article class="project project--cafeteria">
+                  <img class="project__view" src="./Images/Cafeteria.svg" alt="Proyecto cafeteria"/>
+                <div class="logos">
+                  <img class="HTML5" src="./Images/HTML5.svg" alt="Logo de HTML5"/>
+                  <img class="CSS" src="./Images/CSS.svg" alt="Logo de CSS"/>
+                </div>
+                </article>
+                
+                <article class="project project--second">
+                  <img class="project__view-2" src="./Images/Mi proyecto.svg">
+                <div class="logos">
+                  <img class="Java" src="./Images/JAVASCRIPT.svg" alt="Logo de HTML5"/>
+                  <img class="Atom" src="./Images/Atom.svg" alt="Logo de CSS" />
+                </div>
+            </section>
+      <section class="descripcion" aria-labelledby="descripcion">
+        <div class="descripcion__cafeteria">
+          <h2 class="descripcion descripcion__header">Página web de una cafetería</h2>
+          <h3 class="descripcion descripcion__body">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional. Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</h3> 
+          <img class="demo" src="./Images/Demo-off.svg" alt="demo en vivo">
+          <img class="GIT__text" src="./Images/Git-text.svg" alt="GitHub page">
+          </div>
+        <div class="descripcion__proyecto">
+          <h2 class="descripcion descripcion__header">Mi proyecto</h2>
+          <h3 class="descripcion descripcion__body">Descripción del proyecto</h3> 
+          <img class="demo" src="./Images/Demo-off.svg" alt="demo en vivo">
+          <img class="GIT__text" src="./Images/Git-text.svg" alt="GitHub page">
+        </div>
+      </section> 
+          </main>
     <!-- Pie de página con un enlace de correo electrónico funcional. -->
     <footer class="footer">
       <h2 class="contact">Contacto</h2>
-       <nav aria-label="Información de contacto">
+      <nav aria-label="Información de contacto">
         <ul>
-          <li>
-            <a href=mailto:jumamevi99@gmail.com>jumamevi99@gmail.com</a>
+          <lil>
+            <a class="mail" href="mailto:jumamevi99@gmail.com">jumamevi99@gmail.com</a>
+          </li>
+          <li class="logo">
+            <a href="#" araia-label="LinkedIn">
+              <img
+                class="logo1"
+                src="./Images/Linkedin.svg"
+                alt="logo-linkedin"
+              />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img
+                class="logo2"
+                src="./Images/Facebook.svg"
+                alt="logo-facebook"
+              />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img
+                class="logo3"
+                src="./Images/Instagram.svg"
+                alt="logo-Instagram"
+              />
+            </a>
+            <a href="#" aria-label="Twiter(x)">
+              <img
+                class="logo4"
+                src="./Images/Twiter (x).svg"
+                alt="logo-Twiter"
+              />
+            </a>
           </li>
         </ul>
       </nav>
