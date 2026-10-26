@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web project portfolio</title>
-    <link rel="icon" href="./Images/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="./Styles/normalize.css" />
     <link rel="stylesheet" href="./Styles/index.css" />
   </head>
@@ -15,10 +15,12 @@
       <section class="Title" aria-labelledby="titulo-principal">
         <div class="Text">
           <h1 class="Title__principal" id="titulo-principal">
-            Juan Manuel Mejia V
+            Juan Manuel Mejia
           </h1>
           <h2 class="Title__subtitle" id="sub-titulo">
-            Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
+            Desarrolladora Full-Stack Junior
+            <span class="separador">|</span>
+            <span>TypeScript, React, Node.js</span>
           </h2>
           <h2 class="Title__description">
             Desarrolladora web junior con experiencia práctica creando
@@ -63,29 +65,33 @@
           <img class="CHATGPT" src="./Images/CHATGPT.svg" alt="Logo de CHATGPT"/>
         </div>
           <h2 id="proyectos">Proyectos destacados</h2>
-            <section class="project" aria-labelledby="projects-title">
-                <article class="project project--cafeteria">
-                  <img class="project__view" src="./Images/Cafeteria.svg" alt="Proyecto cafeteria"/>
-                <div class="logos">
-                  <img class="HTML5" src="./Images/HTML5.svg" alt="Logo de HTML5"/>
-                  <img class="CSS" src="./Images/CSS.svg" alt="Logo de CSS"/>
-                </div>
-                </article>
-                
-                <article class="project project--second">
-                  <img class="project__view-2" src="./Images/Mi proyecto.svg">
-                <div class="logos">
-                  <img class="Java" src="./Images/JAVASCRIPT.svg" alt="Logo de HTML5"/>
-                  <img class="Atom" src="./Images/Atom.svg" alt="Logo de CSS" />
-                </div>
-            </section>
-      <section class="descripcion" aria-labelledby="descripcion">
-        <div class="descripcion__cafeteria">
+      <section class="Examples">
+      <section class="project" aria-labelledby="projects-title">
+          <article class="project project--cafeteria">
+            <img class="project__view" src="./Images/Cafeteria.svg" alt="Proyecto cafeteria"/>
+              <div class="logos">
+                <img class="HTML5" src="./Images/HTML5.svg" alt="Logo de HTML5"/>
+                <img class="CSS" src="./Images/CSS.svg" alt="Logo de CSS"/>
+              </div>
+          </article>
+          <div class="descripcion__cafeteria">
           <h2 class="descripcion descripcion__header">Página web de una cafetería</h2>
-          <h3 class="descripcion descripcion__body">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</h3> 
+          <h3 class="descripcion descripcion__body">Desarrollo de una landing page responsiva 
+            para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, 
+            maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto 
+            funcional.Logro: Implementé desde cero el diseño completo de la página, organicé 
+            el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</h3> 
           <img class="demo" src="./Images/Demo-off.svg" alt="demo en vivo">
           <img class="GIT__text" src="./Images/Git-text.svg" alt="GitHub page">
           </div>
+          </section>
+      <section class="descripcion" aria-labelledby="descripcion">
+        <article class="project project--second">
+                  <img class="project__view-2" src="./Images/Mi proyecto.svg">
+                <div class="logos">
+                  <img class="Java" src="./Images/JAVASCRIPT.svg" alt="Logo de JavaScript"/>
+                  <img class="Atom" src="./Images/Atom.svg" alt="Logo de Atom" />
+                </div>
         <div class="descripcion__proyecto">
           <h2 class="descripcion descripcion__header">Mi proyecto</h2>
           <h3 class="descripcion descripcion__body">Descripción del proyecto</h3> 
@@ -93,6 +99,7 @@
           <img class="GIT__text" src="./Images/Git-text.svg" alt="GitHub page">
         </div>
       </section> 
+      </section>     
           </main>
     <!-- Pie de página con un enlace de correo electrónico funcional. -->
     <footer class="footer">
