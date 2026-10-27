@@ -239,7 +239,7 @@ main section {
   gap: 48px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .Title {
     font-size: 3.5rem;
     padding: 16px;
@@ -268,7 +268,7 @@ main section {
     display: block;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .Title {
     font-size: 36px;
     display: flex;
