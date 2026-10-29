@@ -34,11 +34,13 @@
 
 body {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #1e1e1e;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .nav ul {
@@ -101,10 +103,8 @@ body {
   font-weight: 400;
 }
 
-.Text {
-}
-
 .Title__description {
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -254,18 +254,17 @@ main section {
     width: 216px;
     height: 280px;
   }
-  .Title__description {
-    font-size: 18px;
-  }
+
   .separador {
     display: none;
   }
   .Title__subtitle {
     margin: 0 auto;
-    pading: 0px 50px 0px 0px;
+    padding: 0px 50px 0px 0px;
   }
   h2 > span {
     display: block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -275,29 +274,48 @@ main section {
     flex-direction: column;
   }
 
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project {
+    height: auto;
+  }
   .Profile {
     order: -1;
   }
-  .project__view{
+  .project__view {
     width: 280px;
     height: 216px;
   }
-  .project__view-2{
+
+  .project__view-2 {
     width: 280px;
     height: 216px;
   }
-  .habilities-logos{
+
+  .habilities-logos {
     flex-wrap: wrap;
     padding: 5px;
   }
-.descripcion.descripcion__header,
-.descripcion.descripcion__body {
+
+  .descripcion.descripcion__header {
     width: 100%;
-    max-width: 320px;
+    min-width: 320px;
     height: fit-content;
     overflow-wrap: break-word;
   }
-  .logos{
+
+  .descripcion__cafeteria,
+  .descripcion__proyecto,
+  .descripcion__body,
+  .project-link {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .logos {
     bottom: 4.5rem;
   }
 }
